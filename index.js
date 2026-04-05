@@ -1,3 +1,4 @@
+require('dotenv').config({ path: './token.env' });
 const Eris = require("eris");
 const bot = new Eris(process.env.token);
 
