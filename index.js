@@ -1,11 +1,8 @@
 const Eris = require("eris");
-const keep_alive = require('./keep_alive.js')
-
 const bot = new Eris(process.env.token);
 
 bot.on("ready", () => {
     console.log("Ready!");
-    
     bot.editStatus("idle");
 });
 
